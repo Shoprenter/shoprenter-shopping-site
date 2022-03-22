@@ -1,0 +1,58 @@
+:root {
+    --sr-green: #6EB400;
+    --sr-green-darker: #578E00;
+    --sr-light-green: #AAE600;
+    --sr-dark-grey: #8C8C8C;
+    --sr-grey: #DEDDDC;
+    --sr-light-grey: #F3F5F8;
+}
+
+.bg-secondary {
+    background-color: var(--sr-light-grey) !important;
+}
+
+.bg-secondary:hover, a.bg-secondary:focus, button.bg-secondary:hover, button.bg-secondary:focus {
+    background-color: var(--sr-grey) !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--sr-green);
+    border-color: var(--sr-green);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--sr-light-green);
+    border-color: var(--sr-light-green);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: none;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background: var(--sr-grey);
+    color: var(--sr-dark-grey);
+    border-color: unset;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--sr-green);
+    border-color: var(--sr-green);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn:not(#search-button) {
+    border-radius: 40px;
+}
+
+.btn.text-uppercase {
+    text-transform: none !important;
+}
