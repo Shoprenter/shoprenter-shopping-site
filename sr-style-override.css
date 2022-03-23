@@ -1,6 +1,6 @@
 :root {
     --sr-green: #6EB400;
-    --sr-green-darker: #578E00;
+    --sr-dark-green: #578E00;
     --sr-light-green: #AAE600;
     --sr-dark-grey: #8C8C8C;
     --sr-grey: #DEDDDC;
@@ -11,20 +11,20 @@
     background-color: var(--sr-light-grey) !important;
 }
 
-.bg-secondary:hover, a.bg-secondary:focus, button.bg-secondary:hover, button.bg-secondary:focus {
+.bg-secondary.navbar-toggler:hover, .bg-secondary.navbar-toggler:focus {
     background-color: var(--sr-grey) !important;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: var(--sr-green);
+    background: linear-gradient(200.32deg, #86c705 23.46%, var(--sr-green) 69.93%);
     border-color: var(--sr-green);
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: var(--sr-light-green);
-    border-color: var(--sr-light-green);
+    background: linear-gradient(var(--sr-dark-green), var(--sr-dark-green));
+    border-color: var(--sr-dark-green);
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -55,4 +55,25 @@
 
 .btn.text-uppercase {
     text-transform: none !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--sr-light-green);
+    outline: 0;
+    box-shadow: unset;
+}
+
+a:hover {
+    color: var(--sr-green);
+}
+
+.text-primary {
+    color: var(--sr-dark-green) !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+    color: var(--sr-dark-green) !important;
 }
